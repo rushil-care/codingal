@@ -158,6 +158,10 @@ class NavBar extends Component {
                         visible={this.state.drawerVisible}
                         width={"90%"}
                     >
+                        <Link to="/posts" className="nav-link-mobile">
+                            Posts
+                        </Link>
+
                         <div className={`timer-countdown-mobile ${timerClassName}`}>
                             {counterJSX}
                         </div>
@@ -178,6 +182,16 @@ class NavBar extends Component {
                 <style jsx={"true"}>{`
                     .hide-me {
                         display: none;
+                    }
+
+                    .nav-link {
+                        font-size: 18px;
+                        color: var(--carbon);
+                    }
+
+                    .nav-link-mobile {
+                        font-size: 18px;
+                        color: var(--carbon);
                     }
 
                     .timer-countdown-mobile {
